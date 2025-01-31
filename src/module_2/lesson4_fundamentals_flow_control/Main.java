@@ -35,7 +35,9 @@ public class Main {
     }
 
     private static void cSyleForLoop1() {
-        for (int x = 0, y = 2, z[] = {1, 2, 3}; x < 3; x++, y--, System.out.println()) {
+        int y = 2;
+        int[] z = {1, 2, 3};
+        for (int x = 0; x < 3; x++, y--, System.out.println()) {
             System.out.printf("x: %1$d, y: %2$d, z[%2$d]: %3$d", x, y, z[y]);
         }
 
@@ -52,8 +54,9 @@ public class Main {
     }
 
     private static void labeledLoops() {
-        outer: for (int i = 0; i < 4; i++) {
-            inner: for (int j = 0; j < 4; j++) {
+        outer:
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
                 if (i == j) continue outer; // or break, break inner -> to have the same output
                 System.out.print(i + ", " + j + " - ");
             }
@@ -85,10 +88,8 @@ public class Main {
                 System.out.println("x is currently: " + x);
                 x += 100;
             }
-            case 100 ->
-                System.out.println("one hundred");
-            default ->
-                System.out.println("other");
+            case 100 -> System.out.println("one hundred");
+            default -> System.out.println("other");
         }
 
         System.out.println("x is: " + x);
@@ -101,7 +102,7 @@ public class Main {
         var result = switch (x) {
             case 0 -> {
                 System.out.println("Calculating for 0");
-                yield  "Zero";
+                yield "Zero";
             }
             default -> throw new IllegalArgumentException("Illegal value!");
         };

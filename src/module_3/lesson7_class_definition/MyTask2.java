@@ -2,7 +2,10 @@ package module_3.lesson7_class_definition;
 
 abstract class MyRunnable2 implements Runnable {
     String message;
-    MyRunnable2(String message) {this.message = message;}
+
+    MyRunnable2(String message) {
+        this.message = message;
+    }
 }
 
 public class MyTask2 {

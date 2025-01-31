@@ -1,7 +1,8 @@
 package module_3.lesson14_interfaces;
 
 interface IV {
-   default void doStuff(){};
+    default void doStuff() {
+    }
 }
 
 interface IW {

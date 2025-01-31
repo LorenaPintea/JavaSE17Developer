@@ -14,7 +14,8 @@ public class InstanceOfScopeExamples {
 
         if (object instanceof String s && s.length() > 5) {
             out.println("Long string: " + s);
-        } {
+        }
+        {
             out.println("Not long, or not a string!");
         }
 
@@ -37,11 +38,11 @@ public class InstanceOfScopeExamples {
 
         do {
 
-        } while(!(object instanceof String str));
+        } while (!(object instanceof String str));
 
         out.println("Str is in scope for this block and has length of " + str.length());
 
-        if(!(object instanceof String str1)) throw new IllegalArgumentException();
+        if (!(object instanceof String str1)) throw new IllegalArgumentException();
 
         out.println("Str1 in scope permanently for this block and has lenght of " + str1.length());
 

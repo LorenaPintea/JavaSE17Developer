@@ -28,7 +28,7 @@ public class Main {
         System.out.println(localDate.getDayOfWeek());
 
         LocalDate localDate2 = localDate.plusDays(10);
-        System.out.println(localDate2.with(ChronoField.MONTH_OF_YEAR, 7));
+        System.out.println(localDate2.withMonth(7));
 
         var localDate3 = LocalDate.parse("2019-02-12");
         System.out.println(localDate3);

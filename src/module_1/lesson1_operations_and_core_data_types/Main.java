@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Thing {
-    private int data;
+    private final int data;
 
     public Thing(int data) {
         this.data = data;
@@ -33,7 +33,7 @@ public class Main {
     private static void equalOperator() {
         String s1 = "Hello";
         String s2 = s1;
-        String s3 = new String("Hello World");
+        String s3 = "Hello World";
 
         System.out.println(s1 == s2);
         System.out.println(s2 == s3);

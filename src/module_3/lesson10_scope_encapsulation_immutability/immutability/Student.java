@@ -1,6 +1,5 @@
 package module_3.lesson10_scope_encapsulation_immutability.immutability;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public final class Student {

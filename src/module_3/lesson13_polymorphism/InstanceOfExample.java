@@ -4,8 +4,7 @@ public class InstanceOfExample {
     public static void oldExample() {
         Object thing = "Hello";
 
-        if (thing instanceof String) {
-            String stringThing = (String)thing;
+        if (thing instanceof String stringThing) {
 
             if (stringThing.length() > 4) {
                 System.out.println("This is a long string!!");
@@ -29,7 +28,7 @@ public class InstanceOfExample {
         Object thing = "Hello";
 
         if (thing instanceof String stringThing && stringThing.length() > 4) {
-                System.out.println("This is a long string!!");
+            System.out.println("This is a long string!!");
         }
     }
 

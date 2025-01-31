@@ -8,7 +8,7 @@ public class Main {
         String s2 = "Hello";
 
         String s3 = "He";
-        String s4 = s3+ "llo";
+        String s4 = s3 + "llo";
 
         System.out.println("s1 == s2?: " + (s1 == s2));
         System.out.println("s1 == s4?: " + (s1 == s4));
@@ -37,7 +37,7 @@ public class Main {
         while (i < 5) {
             if (i++ % 2 == 0)
                 continue;
-           s.concat(", ")
+            s.concat(", ")
                     .concat(Integer.toString(i));
         }
 

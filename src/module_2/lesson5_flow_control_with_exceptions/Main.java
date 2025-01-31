@@ -1,6 +1,5 @@
 package module_2.lesson5_flow_control_with_exceptions;
 
-import java.io.File;
 import java.io.IOException;
 
 public class Main {

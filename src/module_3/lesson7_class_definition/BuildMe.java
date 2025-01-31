@@ -6,16 +6,26 @@ public class BuildMe {
     private String name;
     private LocalDate date;
 
-    private BuildMe() {};
+    private BuildMe() {
+    }
 
     public static Builder builder() {
         return new Builder();
     }
 
+    @Override
+    public String toString() {
+        return "BuildMe{" +
+                "name='" + name + '\'' +
+                ", date=" + date +
+                '}';
+    }
+
     public static class Builder {
         private BuildMe template = new BuildMe();
 
-        private Builder() {};
+        private Builder() {
+        }
 
         public Builder name(String name) {
             template.name = name;
@@ -32,14 +42,6 @@ public class BuildMe {
             template = null;
             return result;
         }
-    }
-
-    @Override
-    public String toString() {
-        return "BuildMe{" +
-                "name='" + name + '\'' +
-                ", date=" + date +
-                '}';
     }
 }
 

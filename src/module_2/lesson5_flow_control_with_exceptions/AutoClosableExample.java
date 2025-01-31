@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 class MyResource implements AutoCloseable {
     private static int nextID = 0;
     private final int ID = nextID++;
+
     {
         System.out.println("Initializing MyResource ID=" + ID);
     }

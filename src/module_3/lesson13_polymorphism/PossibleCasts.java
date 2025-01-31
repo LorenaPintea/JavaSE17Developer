@@ -5,9 +5,9 @@ import java.util.ArrayList;
 public class PossibleCasts {
     public static void main(String[] args) {
         ArrayList al = null;
-        Runnable rn = (Runnable)al;
+        Runnable rn = (Runnable) al;
         Runnable r = null;
-        ArrayList al2 = (ArrayList)r;
+        ArrayList al2 = (ArrayList) r;
 
         //Because String is a final class and the compiler already knows this
         //The casts below are not valid

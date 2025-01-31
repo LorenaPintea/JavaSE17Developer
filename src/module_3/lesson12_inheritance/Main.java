@@ -1,6 +1,6 @@
 package module_3.lesson12_inheritance;
 
-sealed interface Vehicle permits Car, Truck, Bycicle{
+sealed interface Vehicle permits Car, Truck, Bycicle {
     default void add(String item) {
         System.out.println("Adding " + item + " to " + this);
     }
@@ -59,7 +59,8 @@ non-sealed class Truck implements Vehicle /* permits SemiTruck */ {
 //    }
 //}
 
-final class Bycicle implements Vehicle {}
+final class Bycicle implements Vehicle {
+}
 
 public class Main {
 

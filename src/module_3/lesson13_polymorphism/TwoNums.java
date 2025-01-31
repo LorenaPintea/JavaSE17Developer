@@ -1,7 +1,8 @@
 package module_3.lesson13_polymorphism;
 
 public final class TwoNums {
-    private int x, y;
+    private final int x;
+    private final int y;
 
     public TwoNums(int x, int y) {
         this.x = x;
