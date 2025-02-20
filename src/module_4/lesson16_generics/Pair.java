@@ -18,13 +18,26 @@ public class Pair<E> {
     public void setRight(E right) {
         this.right = right;
     }
+
+    @Override
+    public String toString() {
+        return "Pair{" +
+                "left=" + left +
+                ", right=" + right +
+                '}';
+    }
 }
 
 class UsePair {
     public static void main(String[] args) {
         Pair<String> ps = new Pair<>("Something", "else");
+
+        System.out.println(ps);
+
         String left = ps.getLeft();
         ps.setRight("wrong");
+
+        System.out.println(ps);
 
         Pair<LocalDate> pls = new Pair<>(LocalDate.now(), LocalDate.now());
     }
